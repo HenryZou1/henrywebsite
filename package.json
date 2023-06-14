@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Henry Zou Website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Henry Zou Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Henry Zou",
   "dependencies": {
     "bootstrap": "^5.3.0",
     "gatsby": "^5.10.0",

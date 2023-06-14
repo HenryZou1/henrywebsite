@@ -60,7 +60,7 @@ const Index = props => (
       </div>
 
       <div className="slideshow">
-        <Carousel class="slide">
+        <Carousel id ="slide">
           <Carousel.Item>
             <StaticImage src="../images/camera.png" />
           </Carousel.Item>
