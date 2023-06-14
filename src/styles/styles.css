@@ -1,0 +1,154 @@
+:root {
+--font: "Helvetica Neue",-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+--white:#fff;
+--black:#000;
+--maroon:#83333e;
+--off-white:#f2f4f5;
+}
+.leftside{
+  width: 50%;
+  float: left;
+  height:100%;
+}
+.rightside{
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+.static{
+  height: 200px;
+  width: 400px;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+.intro{
+  height: 500px;
+  background-color:var(--black);
+
+  .intro-image{
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 600px;
+    overflow: hidden;
+  }
+  .name-text{
+        position: relative;
+        font-size: 5vw;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+        font-weight: 700;
+        color:var(--white);
+        top: 100px;
+
+    
+        
+        transform: translateY(-50%);
+        text-align: center;
+        mix-blend-mode: difference;
+        z-index: 9;
+        overflow: hidden;
+    }
+    .main-text{
+          position: relative;
+          font-size: 20px;
+          text-transform: uppercase;
+
+          font-weight: 700;
+          color:var(--white);
+       
+
+        
+          top: 100px;
+          transform: translateY(-50%);
+          text-align: center;
+          mix-blend-mode: difference;
+          z-index: 9;
+          overflow: hidden;
+        }
+}
+
+.experience{
+  height: 500px;
+  
+}
+.center{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.background{
+  background-image: url("../images/background.png") ;
+  background-size: cover;
+ 
+  height:1000px;
+  width: 100%;
+}
+.slideshow-text {
+  position: relative;
+  top:35%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--white);
+  transform: translateY(-50%);
+  text-align: center;
+  mix-blend-mode: difference;
+}
+.body-text {
+  position: relative;
+  top: 20%;
+  font-size: 5vh;
+  font-weight: 700;
+  color: var(--white);
+  transform: translateY(-100%);
+  text-align: center;
+}
+.slideshow{
+  position: relative;
+
+
+  height: 500px;
+  padding-left: 25%;
+  .carousel {
+      width: 890px;
+      height: 500px;
+    }
+    
+  .slideshow-text{
+        top: 50px;
+        position: relative;
+        font-size: 8vh;
+        text-transform: uppercase;
+        font-weight: 700;
+        color:var(--white);
+        transform: translateY(-50%);
+        text-align: center;
+        mix-blend-mode: difference;
+    }
+    .body-text{
+          top: 50%;
+          position: relative;
+          font-size: 2vh;       
+          font-weight: 700;
+          color:var(--white);
+          transform: translateY(-100%);
+        text-align: center;
+      }
+
+}
+
+footer{
+  .page-end{
+    background:var(--black);
+    height: 50px;
+    display:flex;
+    align-items: center;
+  }
+}
