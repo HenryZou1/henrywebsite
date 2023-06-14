@@ -32,9 +32,9 @@ const Index = props => (
       <div class="experience">
         <div className="leftside">
           <div className="flex">
-            <div></div>
+            
             <StaticImage className="static" src="../images/td.jpg" />
-            <div></div>
+            
             <StaticImage className="static" src="../images/fdm.jpg" />
           </div>
         </div>
@@ -87,7 +87,7 @@ const Index = props => (
       </div>
     </div>
 
-    <div>&#169; Henry Zou</div>
+  
   </div>
 )
 
