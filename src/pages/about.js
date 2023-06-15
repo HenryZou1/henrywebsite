@@ -14,14 +14,16 @@ const About = () => {
         <Header />
         <div className="section">
           <div className="leftside">
-            <StaticImage className="aboutimage" src="../images/HenrySuit.png" />
+            <div class="program-img">
+              <StaticImage class="aboutimage" src="../images/HenrySuit.png" />
+            </div>
           </div>
           <div className="rightside">
             <p className="aboutpara ">
-              My name is Henry Zou. I was born in Guang Zhou China.At the age of 5, I came to
-              canada. I am a canadian citizen. I graduated
-              Ryerson University 2020 summer with major in computer enginneering
-              and minor in computer science. I enjoy reading novels, ping pong,
+              My name is Henry Zou. I was born in Guang Zhou China.At the age of
+              5, I came to canada. I am a canadian citizen. I graduated Ryerson
+              University 2020 summer with major in computer enginneering and
+              minor in computer science. I enjoy reading novels, ping pong,
               watch TV series and video games. My favourite TV show as of late
               is the Office (US), community, and how I met your mother.
             </p>

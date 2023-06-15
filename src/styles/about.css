@@ -17,7 +17,7 @@
 }
 .section {
   width: 100%;
-  height: 400px;
+  height: 500px;
   padding: 20px;
 }
  h1 {
@@ -28,10 +28,10 @@
    color: #fff;
  }
 .aboutimage{
-  display: block;
+  
     margin: auto;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
  
 }
 
@@ -39,6 +39,7 @@
 .program-img{  
     width:500px;
     margin: auto;
+    margin-top: 10px;
 }
   
 
