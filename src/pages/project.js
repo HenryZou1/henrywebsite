@@ -2,6 +2,7 @@ import React from "react"
 
 import Header from "../components/header"
 import ProjectCard from "../components/Projectcard"
+
 const mentionData = {
   title: "Mentions Crawler",
   video: "https://www.youtube.com/embed/eoHvDXE8yk4",
@@ -72,6 +73,7 @@ export default function About() {
   return (
     <div style={{ backgroundColor: "#000000", width: "100%", height: "100%" }}>
       <Header title="My Work" />
+      <title>projects</title>
       <ProjectCard data={mentionData} />
       <ProjectCard data={cameraData} />
       <ProjectCard data={jpegData} />

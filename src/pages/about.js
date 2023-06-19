@@ -10,6 +10,7 @@ const About = () => {
 
   return (
     <div>
+      <title>about</title>
       <div className="aboutbackground">
         <Header />
         <div className="section">

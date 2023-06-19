@@ -14,7 +14,6 @@ const Index = props => (
       <div className=" leftside center">
         <div className="name-text center">Welcome</div>
         <div className="main-text center">
-          {" "}
           I'm Henry Zou and I am passionate about software development and
           system design. With a strong background in technology and variety of
           different languages, I have dedicated myself to creating/ maintaining

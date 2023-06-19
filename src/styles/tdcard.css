@@ -1,12 +1,13 @@
-.projectCard{
-    
+.projectCard {
+
     height: 600px;
-    width:1200px;
+    width: 1200px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    margin:20px auto;
+    margin: 20px auto;
     border-radius: 15px;
 }
+
 .leftside {
     width: 50%;
     float: left;
@@ -19,22 +20,28 @@
     height: 100%;
     padding: 20px;
 }
-.titlecontainer{
+
+.titlecontainer {
     width: 100%;
     text-align: center;
 }
-.title{
-    font-size: 30px;
-    
-    color: black;
-    text-decoration: none;
-}
-.title:hover {
-    text-decoration: underline;
-}
-.titlenolink {
+
+.title {
     font-size: 30px;
 
     color: black;
     text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.titlenolink {
+    font-size: 30px;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 0;
 }
