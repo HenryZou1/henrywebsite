@@ -12,8 +12,8 @@ const Index = props => (
     <Header />
     <div className="intro">
       <div className=" leftside center">
-        <div className="name-text center">Welcome</div>
-        <div className="main-text center">
+        <div className="name-text ">Welcome</div>
+        <div className="main-text ">
           I'm Henry Zou and I am passionate about software development and
           system design. With a strong background in technology and variety of
           different languages, I have dedicated myself to creating/ maintaining
@@ -31,35 +31,30 @@ const Index = props => (
       <div class="experience">
         <div className="leftside">
           <div className="flex">
-            
             <StaticImage className="static" src="../images/td.jpg" />
-            
             <StaticImage className="static" src="../images/fdm.jpg" />
           </div>
         </div>
         <div class="rightside ">
-          <div className="body-text"> Working Experience</div>
+          <div className="body-text"> Work Experience</div>
           <div class="slideshow-text ">
             I have gained valuable experience and expertise through my roles as
             a Java Lead Developer at FDM and an IT Consultant at TD. These
             positions have allowed me to showcase my technical skills,
             leadership abilities, and problem-solving acumen in dynamic and
-            challenging environments. With a strong background in Java
-            development, I have successfully led teams, collaborated with
-            stakeholders, and delivered high-quality solutions. My experience
+            challenging environments with an agile methodology. My experience
             encompasses system design and implementation, troubleshooting and
-            incident resolution, Agile methodology, documentation, and
-            mentoring. I am adept at utilizing a range of tools and
-            technologies, ensuring efficient collaboration, and consistently
-            meeting deadlines. My work experience reflects a strong commitment
-            to delivering excellence and driving impactful results in the field
-            of software development and IT consulting.
+            incident resolution, documentation. I am adept at utilizing a range
+            of tools and technologies such as mainframe, Java, servicenow,
+            unix/linux server, Java Spring, cyberark, CA-7, C, HTML, CSS. I have
+            a growth mindset and is always willing to learn new technologies,
+            and techniques.
           </div>
         </div>
       </div>
 
       <div className="slideshow">
-        <Carousel id ="slide">
+        <Carousel id="slide">
           <Carousel.Item>
             <StaticImage src="../images/camera.png" />
           </Carousel.Item>
@@ -85,8 +80,6 @@ const Index = props => (
       </div> */}
       </div>
     </div>
-
-  
   </div>
 )
 

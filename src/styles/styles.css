@@ -41,37 +41,28 @@
   }
   .name-text{
         position: relative;
-        font-size: 5vw;
+        font-size: 64px;
         text-transform: uppercase;
-        letter-spacing: 1vw;
+        top: 7%;
         font-weight: 700;
         color:var(--white);
-        top: 100px;
 
-    
-        
-        transform: translateY(-50%);
+  
         text-align: center;
         mix-blend-mode: difference;
-        z-index: 9;
-        overflow: hidden;
+
     }
     .main-text{
           position: relative;
           font-size: 20px;
-          text-transform: uppercase;
-
+          top:10%;
+          
           font-weight: 700;
           color:var(--white);
-       
-
-        
-          top: 100px;
-          transform: translateY(-50%);
+         
           text-align: center;
           mix-blend-mode: difference;
-          z-index: 9;
-          overflow: hidden;
+
         }
 }
 
@@ -93,22 +84,24 @@
 }
 .slideshow-text {
   position: relative;
-  top:35%;
-  text-transform: uppercase;
+
+  font-size: 20px;
   font-weight: 700;
   color: var(--white);
-  transform: translateY(-50%);
+
   text-align: center;
   mix-blend-mode: difference;
 }
 .body-text {
   position: relative;
-  top: 20%;
-  font-size: 5vh;
+  
+  font-size: 64px;
   font-weight: 700;
   color: var(--white);
-  transform: translateY(-100%);
+
   text-align: center;
+  mix-blend-mode: difference;
+
 }
 .slideshow{
   position: relative;
