@@ -1,0 +1,7 @@
+.header {
+    height: 76px;
+    font-size: 24px;
+    .logo{
+        font-size: 30px;
+    }
+}

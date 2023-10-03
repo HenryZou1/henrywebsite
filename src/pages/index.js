@@ -1,43 +1,50 @@
 import * as React from "react"
-import "../styles/styles.css"
+import "../styles/index.css"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Carousel } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { StaticImage } from "gatsby-plugin-image"
 import Header from "../components/header"
+
 const Index = props => (
   <div>
     <title>Henry Website</title>
     <Header />
     <div className="intro">
-      <div className=" leftside center">
-        <div className="name-text ">Welcome</div>
+      <div className=" rightside center">
         <div className="main-text ">
-          I'm Henry Zou and I am passionate about software development and
-          system design. With a strong background in technology and variety of
-          different languages, I have dedicated myself to creating/ maintaining
-          high performing and efficient applications.
+          I'm Henry Zou.
+          <br />
+          A Software Developer
+          <br />
+          based in Toronto.
+        </div>
+        <div className="shortDesciption ">
+          I am a versatile software developer who has worked with variety of 
+          technology and has a positive altitude.
         </div>
       </div>
-      <div className="rightside">
+
+      <div className="leftside ">
         <StaticImage
-          className="intro-image center"
-          src="../images/developer.jpg"
+          className="intro-image"
+          src="../images/henry.jpg"
+          alt=''
         />
       </div>
     </div>
     <div className="background">
-      <div class="experience">
+      <div className="experience">
         <div className="leftside">
           <div className="flex">
-            <StaticImage className="static" src="../images/td.jpg" />
-            <StaticImage className="static" src="../images/fdm.jpg" />
+            <StaticImage className="static" src="../images/td.jpg" alt="" />
+            <StaticImage className="static" src="../images/fdm.jpg" alt="" />
           </div>
         </div>
-        <div class="rightside ">
+        <div className="rightside ">
           <div className="body-text"> Work Experience</div>
-          <div class="slideshow-text ">
+          <div className="slideshow-text ">
             I have gained valuable experience and expertise through my roles as
             a Java Lead Developer at FDM and an IT Consultant at TD. These
             positions have allowed me to showcase my technical skills,

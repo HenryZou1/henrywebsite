@@ -68,7 +68,7 @@ const cameraData = {
 }
 
 
-export default function About() {
+export default function Project() {
  
   return (
     <div style={{ backgroundColor: "#000000", width: "100%", height: "100%" }}>
