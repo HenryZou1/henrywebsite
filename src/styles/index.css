@@ -4,6 +4,7 @@
 --black:#000;
 --maroon:#83333e;
 --off-white:#f2f4f5;
+
 }
 
 .leftside{
@@ -30,7 +31,7 @@
   gap: 10px;
 }
 .intro{
-  height: 90vh;
+  height: 95vh;
   background-color:var(--black);
   padding: 12px;
   
@@ -39,11 +40,8 @@
         position: relative;
         font-size: 64px;
         text-transform: uppercase;
-        
         font-weight: 700;
         color:var(--white);
-        
-  
         text-align: center;
         mix-blend-mode: difference;
 
@@ -70,7 +68,25 @@
     ;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
 
+  100% {
+    opacity: 1;
+    ;
+  }
+}
+.animate1{
+  animation: fadeIn 0.5s forwards;
+}
+.animate2 {
+  animation: fadeIn 1.5s forwards;
+}
+.animate3 {
+  animation: fadeIn .5s forwards;
+}
 .shortDesciption{
   top:15%;
   position: relative;
@@ -94,10 +110,7 @@
   mix-blend-mode: difference;
   padding:20px;
 }
-.experience{
-  height: 500px;
-  
-}
+
 .center{
   position: relative;
   top: 50%;
@@ -106,35 +119,53 @@
 .background{
   background-image: url("../images/background.png") ;
   background-size: cover;
- 
-  height:1000px;
   width: 100%;
 }
 .slideshow-text {
   position: relative;
-
   font-size: 20px;
   font-weight: 700;
   color: var(--white);
-
   text-align: center;
   mix-blend-mode: difference;
 }
 .body-text {
-  position: relative;
-  
+  position: relative; 
   font-size: 64px;
   font-weight: 700;
   color: var(--white);
-
   text-align: center;
   mix-blend-mode: difference;
-
+}
+.workexperience{
+   width: 100%;
+  background: var(--black);
+  padding: 80px 72px 80px;
+}
+.worktitle{
+  text-transform: uppercase;
+  display: inline-block;
+    margin-bottom: 8px;
+    color: #8491a0;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.worktitle1{
+  display: inline-block;
+    width: 100%;
+    max-width: 780px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 110%;
+}
+.workcard{
+  display: flex;
 }
 .slideshow{
   position: relative;
-
-
   height: 500px;
   padding-left: 25%;
   #slide {

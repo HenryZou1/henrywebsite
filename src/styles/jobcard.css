@@ -1,0 +1,51 @@
+
+.job {
+    width: 30%;
+    margin-right: 20px;
+    flex: 1 1 auto;
+}
+.number{
+    display: block;
+    margin-bottom: 8px;
+    color: #8491a0;
+    font-size: 117px;
+    line-height: 100%;
+    font-weight: 400;
+}
+.company{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+}
+.description{
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: none;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        ;
+    }
+}
+
+.animate1 {
+    animation: fadeIn 1.5s forwards;
+}
+
+.animate2 {
+    animation: fadeIn 3s forwards;
+}
+
+.animate3 {
+    animation: fadeIn 5s forwards;
+}

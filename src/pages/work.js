@@ -35,7 +35,7 @@ const tdData = {
 export default function Work() {
   return (
     <div
-      style={{ backgroundColor: "#000000", width: "100vw", height: "100vh" }}
+      style={{ backgroundColor: "#000000", width: "100vw"}}
     >
       <Header />
       <title>Work</title>
