@@ -43,7 +43,7 @@ const Index = props => (
             jobtitle: "Software Developer",
             class: "animate1",
             description:
-              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I would set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstatrion of features after every sprint.",
+              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I would set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
           }}
         ></Jobcard>
         <Jobcard
