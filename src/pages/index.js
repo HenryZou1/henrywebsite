@@ -23,7 +23,7 @@ const Index = props => (
         </div>
         <div className="shortDesciption ">
           I am a versatile software developer who has worked with variety of
-          technology and has a positive altitude.
+          technology and has a positive altitude. I will be away until November 7,2023.
         </div>
       </div>
 
