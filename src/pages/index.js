@@ -13,8 +13,11 @@ const Index = props => (
     <title>Henry Website</title>
     <Header />
     <div className="intro">
-      <div className=" rightside center">
-        <div className="main-text ">
+      <div className="intro-left">
+        <StaticImage className="intro-image" src="../images/henry.jpg" alt="picture" />
+      </div>
+      <div className="intro-right">
+        <div className="main-text">
           I'm Henry Zou.
           <br />
           A Software Developer
@@ -23,12 +26,8 @@ const Index = props => (
         </div>
         <div className="shortDesciption ">
           I am a versatile software developer who has worked with variety of
-          technology and has a positive altitude.
+          technology and always has positive attitude.
         </div>
-      </div>
-
-      <div className="leftside ">
-        <StaticImage className="intro-image" src="../images/henry.jpg" alt="" />
       </div>
     </div>
     <div className="workexperience">
@@ -43,7 +42,7 @@ const Index = props => (
             jobtitle: "Software Developer",
             class: "animate1",
             description:
-              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I would set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
+              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
           }}
         ></Jobcard>
         <Jobcard
@@ -53,7 +52,7 @@ const Index = props => (
             jobtitle: "Mainframe developer",
             class: "animate2",
             description:
-              "I was a mainframe developer for TD Bank. I was apart of their L2 application support team for TD's CORE Products. I would troubleshoot production applications incidents and complete service request such as finanical history extract, account statement inquiry, compound interest statement. I have resolved 143 incidents and 184 service request within TD's service level argreement.",
+              "I was a mainframe developer for TD Bank. I was apart of their L2 application support team for TD's CORE Products. I troubleshoot production applications incidents and complete service request such as finanical history extract, account statement inquiry, compound interest statement. I have resolved 143 incidents and 184 service request within TD's service level argreement.",
           }}
         ></Jobcard>
         <Jobcard
@@ -63,7 +62,7 @@ const Index = props => (
             jobtitle: "Software developer",
             class: "animate3",
             description:
-              "I was a software developer intern for Hatchways. I was completing new feature for their webcrawler project which would crawl through reddit for information about a company.",
+              "I was a software developer intern for Hatchways. I completed new feature for their webcrawler project which would crawl through reddit for information about a company.",
           }}
         ></Jobcard>
       </div>
