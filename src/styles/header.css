@@ -1,6 +1,9 @@
+
 .header {
     height: 76px;
     font-size: 24px;
+    padding: 20px;
+    background-color: #00008B !important;
     .logo{
         font-size: 30px;
     }

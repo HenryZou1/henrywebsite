@@ -16,7 +16,7 @@ const About = () => {
         <div className="section">
           <div className="leftside">
             <div class="program-img">
-              <StaticImage class="aboutimage" src="../images/HenrySuit.png" />
+              <StaticImage class="aboutimage" src="../images/henry.png" />
             </div>
           </div>
           <div className="rightside">
