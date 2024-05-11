@@ -14,7 +14,11 @@ const Index = props => (
     <Header />
     <div className="intro">
       <div className="intro-left">
-        <StaticImage className="intro-image" src="../images/henry.jpg" alt="picture" />
+        <StaticImage
+          className="intro-image"
+          src="../images/henry.jpg"
+          alt="picture"
+        />
       </div>
       <div className="intro-right">
         <div className="main-text">
@@ -25,7 +29,7 @@ const Index = props => (
           based in Toronto.
         </div>
         <div className="shortDesciption ">
-          I am a versatile software developer who has worked with variety of
+          I am a versatile software developer who has worked with a variety of
           technology and always has positive attitude.
         </div>
       </div>
@@ -67,17 +71,35 @@ const Index = props => (
         ></Jobcard>
       </div>
     </div>
+    <div className="aboutme">
+      <h1>About Me</h1>
+
+      <div class="program-img">
+        <StaticImage className="aboutimage" src="../images/henry.png" />
+      </div>
+      <p className="aboutpara">
+        I was born in Guang Zhou China. At the age of 5, I came to canada and
+        became a canadian citizen. I graduated Ryerson University from Ryerson
+        University with a bachelors in computer engineer and a minor in computer
+        science. My hobbies are going to the gym, playing video games, and
+        reading novels. I enjoy programming and like to work with the backend of
+        the system. Also, I enjoy troubleshoot and code reviewing as that is
+        when I can see different perspectives of how to problem solve and new
+        ideas. I have a growth mindset and enjoy learning something new
+        everyday.
+      </p>
+    </div>
     <div className="background">
       <div className="slideshow">
         <Carousel id="slide">
           <Carousel.Item>
-            <StaticImage src="../images/camera.png" />
+            <StaticImage src="../images/camera.png" href="/project" />
           </Carousel.Item>
           <Carousel.Item>
-            <StaticImage src="../images/left.jpg" />
+            <StaticImage src="../images/left.jpg" href="/project" />
           </Carousel.Item>
           <Carousel.Item>
-            <StaticImage src="../images/right.png" />
+            <StaticImage src="../images/right.png" href="/project" />
           </Carousel.Item>
         </Carousel>
 

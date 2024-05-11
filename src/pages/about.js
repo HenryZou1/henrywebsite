@@ -15,8 +15,8 @@ const About = () => {
         <Header />
         <div className="section">
           <div className="leftside">
-            <div class="program-img">
-              <StaticImage class="aboutimage" src="../images/henry.png" />
+            <div className="program-img">
+              <StaticImage className="aboutimage" src="../images/henry.png" />
             </div>
           </div>
           <div className="rightside">
