@@ -1,0 +1,12 @@
+.aboutbackground {
+     position: relative;
+  
+     background-color: #1D1B1B;
+     width: 100%;
+ }
+.picture {
+    height:40vw;
+    display: flex;
+    justify-content: center;
+    
+}

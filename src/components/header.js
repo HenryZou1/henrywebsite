@@ -11,7 +11,7 @@ const Header = () => (
         Henry Zou
       </Navbar.Brand>
       <Nav className="justify-content-end" style={{ width: "100%" }}>
-  
+        <Nav.Link href="/certification">Certifications</Nav.Link>
         <Nav.Link href="/project">Project</Nav.Link>
         <Nav.Link href="/work">Work</Nav.Link>
         <Nav.Link
