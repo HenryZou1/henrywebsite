@@ -15,7 +15,8 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.13.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
@@ -44,8 +45,8 @@
     "node": "18.x"
   },
   "overrides": {
-  "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-    "react": "^18.2.0"
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.2.0"
     }
   }
 }

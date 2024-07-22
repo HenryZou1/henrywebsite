@@ -8,73 +8,17 @@ import { StaticImage } from "gatsby-plugin-image"
 import Header from "../components/header"
 import Jobcard from "../components/jobcard"
 
+
 const Index = props => (
   <div>
     <title>Henry Website</title>
     <Header />
-    <div className="intro">
-      <div className="intro-left">
-        <StaticImage
-          className="intro-image"
-          src="../images/henry.jpg"
-          alt="picture"
-        />
-      </div>
-      <div className="intro-right">
-        <div className="main-text">
-          I'm Henry Zou.
-          <br />
-          A Software Developer
-          <br />
-          based in Toronto.
-        </div>
-        <div className="shortDesciption ">
-          I am a versatile software developer who has worked with a variety of
-          technology and always has positive attitude.
-        </div>
-      </div>
-    </div>
-    <div className="workexperience">
-      <div className="worktitle">work experience</div>
-      <br />
-      <div className="worktitle1">Companies I have worked in the past.</div>
-      <div className="workcard">
-        <Jobcard
-          data={{
-            number: "01",
-            company: "FDM Group",
-            jobtitle: "Software Developer",
-            class: "animate1",
-            description:
-              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
-          }}
-        ></Jobcard>
-        <Jobcard
-          data={{
-            number: "02",
-            company: "TD Bank",
-            jobtitle: "Mainframe developer",
-            class: "animate2",
-            description:
-              "I was a mainframe developer for TD Bank. I was apart of their L2 application support team for TD's CORE Products. I troubleshoot production applications incidents and complete service request such as finanical history extract, account statement inquiry, compound interest statement. I have resolved 143 incidents and 184 service request within TD's service level argreement.",
-          }}
-        ></Jobcard>
-        <Jobcard
-          data={{
-            number: "03",
-            company: "Hatchways",
-            jobtitle: "Software developer",
-            class: "animate3",
-            description:
-              "I was a software developer intern for Hatchways. I completed new feature for their webcrawler project which would crawl through reddit for information about a company.",
-          }}
-        ></Jobcard>
-      </div>
-    </div>
+    <Intro></Intro>
+    <Work></Work>
     <div className="aboutme">
       <h1>About Me</h1>
 
-      <div class="program-img">
+      <div className="program-img">
         <StaticImage className="aboutimage" src="../images/henry.png" />
       </div>
       <p className="aboutpara">
@@ -93,13 +37,13 @@ const Index = props => (
       <div className="slideshow">
         <Carousel id="slide">
           <Carousel.Item>
-            <StaticImage src="../images/camera.png" href="/project" />
+            <StaticImage src="../images/camera.png" href="/project" alt="camera"/>
           </Carousel.Item>
           <Carousel.Item>
-            <StaticImage src="../images/left.jpg" href="/project" />
+            <StaticImage src="../images/left.jpg" href="/project" alt="board"/>
           </Carousel.Item>
           <Carousel.Item>
-            <StaticImage src="../images/right.png" href="/project" />
+            <StaticImage src="../images/right.png" href="/project" alt = "game"/>
           </Carousel.Item>
         </Carousel>
 
@@ -144,5 +88,71 @@ const Index = props => (
     </div>
   </div>
 )
-
+function Intro(){
+  return (
+    <div key ="intro" className="intro">
+      <div className="intro-left">
+        <StaticImage
+          className="intro-image"
+          src="../images/henry.jpg"
+          alt="picture"
+        />
+      </div>
+      <div className="intro-right">
+        <div className="main-text">
+          I'm Henry Zou.
+          <br />
+          A Software Developer
+          <br />
+          based in Toronto.
+        </div>
+        <div className="shortDesciption ">
+          I am a versatile software developer who has worked with a variety of
+          technology and always has positive attitude.
+        </div>
+      </div>
+    </div>
+  )
+}
+function Work(){
+  return (
+    <div className="workexperience">
+      <div className="worktitle">work experience</div>
+      <br />
+      <div className="worktitle1">Companies I have worked in the past.</div>
+      <div className="workcard">
+        <Jobcard
+          data={{
+            number: "01",
+            company: "FDM Group",
+            jobtitle: "Software Developer",
+            class: "animate1",
+            description:
+              "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
+          }}
+        ></Jobcard>
+        <Jobcard
+          data={{
+            number: "02",
+            company: "TD Bank",
+            jobtitle: "Mainframe developer",
+            class: "animate2",
+            description:
+              "I was a mainframe developer for TD Bank. I was apart of their L2 application support team for TD's CORE Products. I troubleshoot production applications incidents and complete service request such as finanical history extract, account statement inquiry, compound interest statement. I have resolved 143 incidents and 184 service request within TD's service level argreement.",
+          }}
+        ></Jobcard>
+        <Jobcard
+          data={{
+            number: "03",
+            company: "Hatchways",
+            jobtitle: "Software developer",
+            class: "animate3",
+            description:
+              "I was a software developer intern for Hatchways. I completed new feature for their webcrawler project which would crawl through reddit for information about a company.",
+          }}
+        ></Jobcard>
+      </div>
+    </div>
+  )
+}
 export default Index
