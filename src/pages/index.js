@@ -7,47 +7,63 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { StaticImage } from "gatsby-plugin-image"
 import Header from "../components/header"
 import Jobcard from "../components/jobcard"
+import {useIsVisible} from "../hooks/useIsVisible"
+import { useRef, useEffect } from "react"
+const Index = () => {
+  
+  
+  return (
+    <div>
+      <title>Henry Website</title>
+      <Header />
+      <Intro></Intro>
+      <Work></Work>
 
+      <div className="aboutme">
+        <h1>About Me</h1>
 
-const Index = props => (
-  <div>
-    <title>Henry Website</title>
-    <Header />
-    <Intro></Intro>
-    <Work></Work>
-    <div className="aboutme">
-      <h1>About Me</h1>
-
-      <div className="program-img">
-        <StaticImage className="aboutimage" src="../images/henry.png" />
+        <div className="program-img">
+          <StaticImage className="aboutimage" src="../images/henry.png" />
+        </div>
+        <p className="aboutpara">
+          I was born in Guang Zhou China. At the age of 5, I came to canada and
+          became a canadian citizen. I graduated Ryerson University from Ryerson
+          University with a bachelors in computer engineer and a minor in
+          computer science. My hobbies are going to the gym, playing video
+          games, and reading novels. I enjoy programming and like to work with
+          the backend of the system. Also, I enjoy troubleshoot and code
+          reviewing as that is when I can see different perspectives of how to
+          problem solve and new ideas. I have a growth mindset and enjoy
+          learning something new everyday.
+        </p>
       </div>
-      <p className="aboutpara">
-        I was born in Guang Zhou China. At the age of 5, I came to canada and
-        became a canadian citizen. I graduated Ryerson University from Ryerson
-        University with a bachelors in computer engineer and a minor in computer
-        science. My hobbies are going to the gym, playing video games, and
-        reading novels. I enjoy programming and like to work with the backend of
-        the system. Also, I enjoy troubleshoot and code reviewing as that is
-        when I can see different perspectives of how to problem solve and new
-        ideas. I have a growth mindset and enjoy learning something new
-        everyday.
-      </p>
-    </div>
-    <div className="background">
-      <div className="slideshow">
-        <Carousel id="slide">
-          <Carousel.Item>
-            <StaticImage src="../images/camera.png" href="/project" alt="camera"/>
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/left.jpg" href="/project" alt="board"/>
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/right.png" href="/project" alt = "game"/>
-          </Carousel.Item>
-        </Carousel>
+      <div className="background">
+        <div className="slideshow">
+          <Carousel id="slide">
+            <Carousel.Item>
+              <StaticImage
+                src="../images/camera.png"
+                href="/project"
+                alt="camera"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage
+                src="../images/left.jpg"
+                href="/project"
+                alt="board"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage
+                src="../images/right.png"
+                href="/project"
+                alt="game"
+              />
+            </Carousel.Item>
+          </Carousel>
 
-        {/* <div className="leftside">
+          {/* <div className="leftside">
         <div className = "slideshow-text">Projects</div>
         <div className = "body-text"> My  projects are: pingpong ball detection with raspberry pi,
         a multimedia center, and the game jarknoid. For the pingpong ball detection, I bought and
@@ -84,10 +100,12 @@ const Index = props => (
         </div>
       </div>
        */}
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
+
 function Intro(){
   return (
     <div key ="intro" className="intro">
@@ -115,8 +133,11 @@ function Intro(){
   )
 }
 function Work(){
+  const ref = useRef()
+  const isVisible = useIsVisible(ref)
+  useEffect (()=> {})
   return (
-    <div className="workexperience">
+    <div className="workexperience" ref={ref}>
       <div className="worktitle">work experience</div>
       <br />
       <div className="worktitle1">Companies I have worked in the past.</div>
@@ -126,7 +147,7 @@ function Work(){
             number: "01",
             company: "FDM Group",
             jobtitle: "Software Developer",
-            class: "animate1",
+            class: isVisible ? "animate1" : "",
             description:
               "I was a Java developer for FDM Group. I was a technical team lead for their ticketing consultant portal. I set priority for the jira story backlog, write and refine stories. I would do code reviews, troubleshoot bugs and write code to complete my user story. Biweekly, I would lead the code merge meeting for the team and would present to stakeholders a demonstrations of new features after every sprint.",
           }}
@@ -136,7 +157,7 @@ function Work(){
             number: "02",
             company: "TD Bank",
             jobtitle: "Mainframe developer",
-            class: "animate2",
+            class: isVisible ? "animate2" : "",
             description:
               "I was a mainframe developer for TD Bank. I was apart of their L2 application support team for TD's CORE Products. I troubleshoot production applications incidents and complete service request such as finanical history extract, account statement inquiry, compound interest statement. I have resolved 143 incidents and 184 service request within TD's service level argreement.",
           }}
@@ -146,7 +167,7 @@ function Work(){
             number: "03",
             company: "Hatchways",
             jobtitle: "Software developer",
-            class: "animate3",
+            class: isVisible ? "animate3" : "",
             description:
               "I was a software developer intern for Hatchways. I completed new feature for their webcrawler project which would crawl through reddit for information about a company.",
           }}
