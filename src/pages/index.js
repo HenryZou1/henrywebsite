@@ -20,12 +20,12 @@ const Index = () => {
       <Work></Work>
 
       <div className="aboutme">
-        <h1>About Me</h1>
+        <h1 id="blacktext">About Me</h1>
 
         <div className="program-img">
           <StaticImage className="aboutimage" src="../images/henry.png" />
         </div>
-        <p className="aboutpara">
+        <p className="aboutpara" id="blacktext">
           I was born in Guang Zhou China. At the age of 5, I came to canada and
           became a canadian citizen. I graduated Ryerson University from Ryerson
           University with a bachelors in computer engineer and a minor in
@@ -108,11 +108,11 @@ const Index = () => {
 
 function Intro(){
   return (
-    <div key ="intro" className="intro">
+    <div key="intro" className="intro">
       <div className="intro-left">
         <StaticImage
           className="intro-image"
-          src="../images/henry.jpg"
+          src="../images/myAvatar.png"
           alt="picture"
         />
       </div>

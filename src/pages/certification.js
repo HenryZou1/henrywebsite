@@ -1,8 +1,8 @@
 import React from "react"
-import "../styles/certification.css"
+
 import Header from "../components/header"
 import { StaticImage } from "gatsby-plugin-image"
-
+import "../styles/certification.css"
 export default function certification() {
   return (
     <div>
