@@ -37,33 +37,35 @@ const Index = () => {
           learning something new everyday.
         </p>
       </div>
-      <div className="background">
-        <div className="slideshow">
-          <Carousel id="slide">
-            <Carousel.Item>
-              <StaticImage
-                src="../images/camera.png"
-                href="/project"
-                alt="camera"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <StaticImage
-                src="../images/left.jpg"
-                href="/project"
-                alt="board"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <StaticImage
-                src="../images/right.png"
-                href="/project"
-                alt="game"
-              />
-            </Carousel.Item>
-          </Carousel>
+      <div className="project">
+        <h1 id="whitetext">Latest Project</h1>
+        <iframe
+          src="https://www.youtube.com/embed/q-I23hkDPwI"
+          allowfullscreen
+          width="50%"
+          height="70%"
+          title="IBM App Connect Project"
+        ></iframe>
+      </div>
 
-          {/* <div className="leftside">
+      <div className="slideshow">
+        <Carousel id="slide">
+          <Carousel.Item>
+            <StaticImage
+              src="../images/camera.png"
+              href="/project"
+              alt="camera"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <StaticImage src="../images/left.jpg" href="/project" alt="board" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <StaticImage src="../images/right.png" href="/project" alt="game" />
+          </Carousel.Item>
+        </Carousel>
+
+        {/* <div className="leftside">
         <div className = "slideshow-text">Projects</div>
         <div className = "body-text"> My  projects are: pingpong ball detection with raspberry pi,
         a multimedia center, and the game jarknoid. For the pingpong ball detection, I bought and
@@ -100,7 +102,6 @@ const Index = () => {
         </div>
       </div>
        */}
-        </div>
       </div>
     </div>
   )

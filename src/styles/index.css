@@ -9,6 +9,9 @@
 #blacktext{
   color: black;
 }
+#whitetext {
+  color: white;
+}
 .leftside {
   width: 50%;
   float: left;
@@ -203,6 +206,7 @@
   position: relative;
   height: 500px;
   padding-left: 25%;
+  background-color: #ffffff;
   #slide {
     width: 890px;
     height: 500px;
@@ -221,7 +225,7 @@
   }
   .body-text {
     top: 50%;
-    position: relative;
+    position: flex;
     font-size: 2vh;
     font-weight: 700;
     color: var(--white);
@@ -229,7 +233,15 @@
     text-align: center;
   }
 }
+.project {
+  position: relative;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color:black;
+  align-items: center;
 
+}
 footer {
   .page-end {
     background: var(--black);
