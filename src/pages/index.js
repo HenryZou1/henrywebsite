@@ -47,24 +47,32 @@ const Index = () => {
           title="IBM App Connect Project"
         ></iframe>
       </div>
-
-      <div className="slideshow">
-        <Carousel id="slide">
-          <Carousel.Item>
-            <StaticImage
-              src="../images/camera.png"
-              href="/project"
-              alt="camera"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/left.jpg" href="/project" alt="board" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <StaticImage src="../images/right.png" href="/project" alt="game" />
-          </Carousel.Item>
-        </Carousel>
-
+      <div className="containerslide">
+        <div className="slideshow">
+          <Carousel id="slide">
+            <Carousel.Item>
+              <StaticImage
+                src="../images/camera.png"
+                href="/project"
+                alt="camera"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage
+                src="../images/left.jpg"
+                href="/project"
+                alt="board"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage
+                src="../images/right.png"
+                href="/project"
+                alt="game"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </div>
         {/* <div className="leftside">
         <div className = "slideshow-text">Projects</div>
         <div className = "body-text"> My  projects are: pingpong ball detection with raspberry pi,

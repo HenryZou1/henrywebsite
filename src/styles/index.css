@@ -149,7 +149,7 @@
 .workexperience {
   width: 100%;
   background: var(--black);
-  padding: 80px 72px 80px;
+  padding: 24px 80px 24px;
 }
 .worktitle {
   text-transform: uppercase;
@@ -177,7 +177,7 @@
   width: 100%;
   background-color: #ffffff;
   
-  padding: 20px 18px 20px;
+  padding: 24px 80px;
   height: 600px;
   .title{
     color: black;
@@ -202,15 +202,24 @@
       margin-left: 0.5rem;
     }
 }
-.slideshow {
-  position: relative;
-  height: 500px;
-  padding-left: 25%;
+.containerslide{
+  display: flex;
+  padding: 24px 80px 24px;
+  align-items: center;
   background-color: #ffffff;
-  #slide {
-    width: 890px;
-    height: 500px;
-  }
+  justify-content: space-evenly;
+  
+}
+
+.slideshow {
+
+  
+  width: 90vh;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* use this property to hide the scrollbar on firefox */
+    scrollbar-width: none;
 
   .slideshow-text {
     top: 50px;
@@ -240,8 +249,10 @@
   flex-direction: column;
   background-color:black;
   align-items: center;
+  padding: 36px 80px;
 
 }
+
 footer {
   .page-end {
     background: var(--black);
