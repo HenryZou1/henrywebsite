@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import "../styles/header.css"
 const Header = () => (
   <header>
-    <Navbar bg="primary" data-bs-theme="dark" className="header">
+    <Navbar data-bs-theme="dark" className="header">
       <Navbar.Brand href="/" className="logo">
         Henry Zou
       </Navbar.Brand>
